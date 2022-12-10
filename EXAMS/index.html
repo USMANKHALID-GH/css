@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<style>
+    *{
+        margin-top: 10px;
+    }
+    .table1 table{
+        background-color: azure;
+    }
+    table  ,tr, th, td{
+     border: 1px solid black;
+     border-collapse: collapse;
+     border-radius: 50px;
+    }
+    .table1 caption{
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 5px;
+        padding: 12px;
+    }
+   
+    
+    .table1 td{
+        text-align: center;
+        font-size: 32px;
+        padding: 4px;
+    }
+    .table1 th:nth-child(even),td:nth-child(even){
+        background-color: aquamarine;
+    }
+
+    .table1 tr:nth-child(even){
+        background-color: rgb(102, 102, 119);
+    }
+
+
+
+    
+
+</style>
+<body>
+    <div class="table1">
+     <table width="100%">
+        <thead>
+            <caption>DAYS OF THE WEEK</caption>
+            <tr>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THUR</th>
+                <th>FRI</th>
+                <th>SATUR</th>
+                <th>SUN</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1</tD>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</tD>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</tD>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</tD>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</tD>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+
+
+        </tbody>
+
+
+     </table>
+
+
+    </div>
+
+
+     <div class="table2">
+
+        <table width="100%">
+            <caption>second Table</caption>
+            <thead>
+                <tr>
+                    <th>Fname</th>
+                    <th>Mname</th>
+                    <th>Lname</th>
+                    <th rowspan="2">Image</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>USMAN</td>
+                    <td>TOPBAS</td>
+                    <td>KHALID</td>
+                  </tr>
+                <tr>
+                    <td colspan="3">USMAN</td>
+                    
+                </tr>
+                <tr>
+                    <td>USMAN</td>
+                    <td>TOPBAS</td>
+                    <td>KHALID</td>
+                    <tdrowspan="2">TOPBAS</tdrowspan=>
+                    <td rowspan="2">KHALID</td>
+                    
+                </tr>
+                   
+             </tbody>
+
+
+        </table>
+
+     </div>
+</body>
+</html>

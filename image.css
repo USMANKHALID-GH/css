@@ -1,0 +1,24 @@
+.example{
+    margin: 2rem;
+    padding-left: 2rem;
+    border: 2px solid black;
+}
+
+.example img{
+    width: 15%;
+    height: auto;
+    display: block;
+}
+
+.class{
+   
+    border-bottom: 2px solid black;
+}
+
+.class img{
+    width: 10%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 50%;
+   
+}

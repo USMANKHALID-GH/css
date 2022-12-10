@@ -1,0 +1,15 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    width:30vw;
+    height: 30vw;
+    background-color: black;
+    color: white;
+    /* padding:  1rem; */
+}
+.left{
+    float: right;
+    margin-left: 0px;
+}

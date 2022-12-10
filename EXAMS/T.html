@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+    *{
+        margin: 3px;
+        text-align: center;
+    }
+    input{
+        display: inline-block;
+    }
+    </style>
+<body>
+    <label for="">Enter a number</label>
+    <input type="text" id="I">
+    
+    <br>
+    <button onclick="myF()">CHECK</button>
+    <div id="txt">
+</body>
+<script>
+    function myF(){
+        var x=document.getElementById("I").value;
+     
+         var text="";
+         if(isNaN(x) && x<1 && x>10){
+            text="IS not number";
+           
+         }
+         else{
+            text="is number";
+         }
+
+         document.getElementById('txt').innerHTML=text;
+    }
+       
+</script>
+
+
+</html>

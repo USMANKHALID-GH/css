@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <label for="">ISIM: </label>
+    <input type="text" name="" id="isim">
+    <br>
+    <label for="">Bilet Numarasi: </label>
+    <input type="text" name="" id="bilet">
+    <br>
+    <button onclick="myFun()">Tahmin et</button>
+
+    <p id="sonuc"></p>
+    
+</body>
+
+<script>
+
+    function myFun(){
+        var isim1=document.getElementById("isim").value;
+        var num=document.getElementById("bilet").value;
+        
+
+        if(isim1==''){
+            alert("isim girin")
+        }
+        if(num==''){
+            alert("bilet numaran girin")
+        }
+
+        if(isNaN(num) || num.length<7){
+            document.getElementById('sonuc').innerHTML= isim1+ " try again yeniden dene!";}
+        else
+         document.getElementById('sonuc').innerHTML= isim1+ "dogru numara!  "+ num;
+    
+    }
+</script>
+</html>

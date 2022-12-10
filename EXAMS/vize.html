@@ -1,0 +1,61 @@
+
+<html >
+<head>
+   
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 3px;
+    }
+    
+</style>
+<body>
+    <form action="">
+<label for="">Birinci Sayi:</label>
+<input id="num1" type="number"> <br>
+<label for="">Ikinci Sayi:</label>
+<input id="num2" name="radio" type="number"> <br>
+<input id="topla" name="radio" type="radio">Topla
+<input id="cikar"name="radio" type="radio">Cikar
+<input id="bol" name="radio" type="radio">Bol 
+<input id="carp"name="radio" type="radio">Carp <br>
+<input id="sonuc" type="text" placeholder="sonuc"> <br>
+<button onclick="calc()">Hesapla</button> 
+    </form>
+</body>
+
+<script>
+
+    function calc(){
+    var A1=document.getElementById("num1").value;
+    var A2=document.getElementById("num2").value;
+   if(document.getElementById("topla").checked){
+     
+     alert(Number(A1)+Number(A2))
+     document.getElementById('sonuc').value=Number(A1)+Number(A2);
+   }
+   else  if(document.getElementById("cikar").checked){
+    
+     alert(Number(A1)-Number(A2))
+   }
+   else if(document.getElementById("bol").checked){
+     if(A2==='0'){
+        alert("0 ile bolunmez")
+     }
+     else  alert(Number(A1)/Number(A2))
+
+
+    
+   }
+   else if(document.getElementById("carp").checked){
+     
+     alert(Number(A1)*Number(A2))
+   }
+
+    }
+
+</script>
+
+
+</html>

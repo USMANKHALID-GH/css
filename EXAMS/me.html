@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="">
+    <h1>Basit Hesap Makinesi</h1>
+    <input type="text" name="" id="sayi1" placeholder="Birinci Sayı"/><br>
+    <input type="text" name="" id="sayi2" placeholder="İkinci Sayı"/>
+    <p>Lütfen İşlem Seçiniz</p>
+    <input type="radio" name="islem" id="toplama">Toplama <br>
+    <input type="radio" name="islem" id="cikarma">Çıkarma <br>
+    <input type="radio" name="islem" id="bölme">Bölme   <br>
+    <input type="radio" name="islem" id="carpma">Çarpma  <br>
+    <br>
+    <input type="text" name="" id="sonuc" placeholder="Sonuç" /><br>
+    <br>
+    <button onclick="islemler()"    type="button">Hesapla</button> <br>    
+   </form>
+</body>
+</html>
+<script>
+
+    function islemler(){
+    
+        var sayi1=document.getElementById("sayi1").value;
+        var sayi2=document.getElementById("sayi2").value;
+     
+
+    if(sayi1=='' ||sayi2==''){
+        alert('sayac1  veya sayc 2 girin')
+    }
+
+
+     else if (document.getElementById("toplama").checked){
+      
+         document.getElementById("sonuc").value=Number(sayi1)+Number(sayi2);
+         
+       
+     }
+     
+     else if (document.getElementById("cikarma").checked){
+        document.getElementById("sonuc").value=Number(sayi1)-Number(sayi2);
+     
+      }
+    
+    else if (document.getElementById("bölme").checked){
+        if (sayi2=='0'){
+            alert("Bir sayı 0 a bölünmez")
+        }
+        else
+        document.getElementById("sonuc").value=Number(sayi1)/Number(sayi2);
+     }
+     
+     else if (document.getElementById("carpma").checked){
+        document.getElementById("sonuc").value=Number(sayi1)*Number(sayi2);
+     }
+    }
+ </script>

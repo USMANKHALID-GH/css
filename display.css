@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main{
+    background: black;
+    color: white;
+    width: 50%;
+} */
+p{
+    margin-top: 1rem;
+    background:  darkgray;
+}
+span{
+    display: inline-block;
+    background-color: aqua;
+    margin: 10px;
+    padding: 20px;
+}
+nav{
+    margin-top: 0;
+    background: blue;
+    height: 10vh;
+}
+ol{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: right;
+    padding: 10px 10px;
+}
+ol li{
+    display: inline;
+    
+}
+ol li a{
+    text-decoration: none;
+    color: white;
+    
+    font-size: large;
+}
+li:hover a{
+    text-decoration: underline;
+     background-color: aqua;
+}

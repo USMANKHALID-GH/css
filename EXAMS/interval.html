@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        text-align: center;
+
+    }
+
+   #out{
+     width: 400px;
+     height: 400px;
+     position: relative;
+     border: 3px solid blue;
+
+    }
+    #ball{
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border: 3px solid black;
+        border-radius: 50px;
+        top: 10px;
+        text-align: center;
+        
+
+    }
+</style>
+<body>
+
+    <div id="out">
+        <div id="ball">Ball</div>
+
+    </div>
+
+    <button onclick="myF()">CLICK ME</button>
+       
+</body>
+
+
+
+
+<script>
+   
+ 
+  function myF(){
+    var i=document.getElementById("ball");
+    var interval=setInterval(startWork,100);
+    var top=0;
+    function startWork(){
+        if(top==300){
+           clearInterval(interval)
+        }
+        else{
+            top++;
+            i.style.top=top+'px';
+            i.style.right=top+'px';
+            
+        }
+       
+    }
+   
+
+}
+
+</script>
+</html>

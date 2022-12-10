@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0px;
+} 
+
+body{
+    font:1.5re "san-serif", "time new roman";
+
+    min-height: 100vh;
+    background-color: rgb(72, 44, 99);
+    background-image: radial-gradient(whitesmoke ,rgb(72, 44, 99 ));
+    display: flex;
+    flex-direction: column;
+}
+header, nav, main ,footer{
+    display: grid;
+    place-content: center; 
+    grid-template-columns: 100%;
+    text-align: center;
+
+
+}
+
+header,footer{
+    position: sticky;
+    background-color: rgb(32, 32, 31);
+    color: white;
+}
+header{
+    top:0;  
+}
+nav{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+}
+main{
+    flex-grow: 1;
+}
+
+footer{
+    bottom: 0;
+}
+/* media queries */
+
+
+/* small */
+@media screen and  (min-width:575px) {
+    body{
+        background-color: green;
+        background-image:  radial-gradient(whitesmoke, black);
+
+    }
+   nav{
+    display: none;
+   }
+      
+}
+
+/* medium*/
+@media screen and  (min-width:768px) {
+    body{
+        background-color: rgb(31, 32, 31);
+        background-image:  radial-gradient(whitesmoke, rgb(163, 126, 126));
+
+    }
+   
+      
+}
+
+/* large */
+@media screen and  (min-width:992px) {
+    body{
+        background-color: rgb(41, 27, 58);
+        background-image:  radial-gradient(whitesmoke, rgb(34, 7, 7));
+
+    }
+  
+      
+}
+
+/* rotation */
+@media screen and  (min-height:425px) and (min-aspect-ratio:7/4){
+    body{
+        background-color: rgb(125, 152, 156);
+        background-image:  radial-gradient(whitesmoke, rgb(182, 184, 179));
+
+    }
+    h1,h2{
+        font-size: larger;
+    }
+  
+      
+}
+
+
+ 

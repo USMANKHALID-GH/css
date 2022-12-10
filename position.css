@@ -1,0 +1,67 @@
+*{
+    margin:0 0;
+}
+section{
+    height: 100vh;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.social{
+    position: fixed; 
+    top: 5%;
+    left:0;
+    background-color: white;
+    z-index: 1;
+}
+
+ footer, header{
+   
+    height: 20vh;
+    
+    color:  black;
+    text-align: center;
+    
+    
+}
+header{
+    position: sticky;
+    top:0;
+}
+ footer{
+    background: lightblue;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+ }
+
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 16px;
+    
+}
+li a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color:black
+} 
+a:visited{
+    /* color: azure; */
+}
+li a:focus,
+li a:hover {
+   text-decoration: underline;
+   
+}
+
+

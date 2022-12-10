@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+}
+
+nav{
+border: 2px solid black;
+border-radius: 2rem;
+margin: 0 auto 2rem;
+max-width: 600px;
+font-size: 3rem;
+line-height: 4rem; 
+}
+
+h1{
+    padding: 1rem;
+    background: blue;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+}
+ul{
+    list-style-type: none;
+
+}
+
+li a{
+    display: block;
+}
+li{
+    border-top: 1px solid #333;
+}
+
+li a, li a:visited{
+    color:  darkcyan ;
+    text-decoration: none;}
+
+li a:hover,
+li a:focus{
+    background-color: whitesmoke;
+}
+
+li :last-child {
+    border-radius: 0 0 2rem 2rem;
+}
+
+

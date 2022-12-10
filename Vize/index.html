@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Number of click</label>
+    
+    <input id="i" type="text" placeholder="0">
+    <br>
+    <button onclick="myfun()">Click me</button>
+    <form action=""">
+    <label  id="i1" for="">ISIM</label>
+    <input  id="i2" type="text"> <br>
+    <label  for="">Tarih</label> 
+    <input id="i3" size="2" type="number">-<input id="i4" size="2"  type="number">-<input id="i5" size="2"  type="number">
+    <br>
+    <button onclick="kaydet()">kaydet</button>
+    <button onclick="temizle()">temizle</button>
+    </form>
+</body>
+<script>
+    var but=0;
+    function myfun(){
+        but+=1;
+       
+        document.getElementById('i').value=but+" defa tikladiniz";
+
+    }
+
+    function temizle(){
+        document.getElementById('i1').value="";
+        document.getElementById('i2').value="";
+        document.getElementById('i3').value="";
+        document.getElementById('i4').value="";
+        document.getElementById('i5').value="";
+
+    }
+    function kaydet(){
+        if(document.getElementById("i2").value==""){
+            alert("ismi bos olamaz");
+        }
+        var gun=document.getElementById("i3").value;
+        var ay=document.getElementById("i4").value;
+        var yil=document.getElementById("i5").value;
+        var tarih=gun+"/"+ay+"/"+yil;
+        var dateObject = new Date(tarih,"");
+         if(Date.parse(tarih))
+         {
+            alert("SDFSADFSDDF")
+         }
+         else{
+            alert("sadkdfsadfkas111111111111")
+         }
+        
+        
+    }
+
+
+
+</script>
+</html>

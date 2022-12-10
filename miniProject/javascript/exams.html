@@ -1,0 +1,67 @@
+<html>
+<body>
+<head>
+    <style>
+        form input{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+   <input  id="firstRow" placeholder="ilk deger"> <br>
+    <input  id="secondRow" placeholder="2nd deger"> <br>
+    Toplama<input id="toplam" type="radio" name="selection"> <br>
+    cikarma<input id="cikarma" type="radio" name="selection"> <br>
+    bolme<input id="bolme" type="radio" name="selection"> <br>
+    carpim<input id="carpim" type="radio" name="selection"> <br>
+  
+   <input  id="sonuc" placeholder="sonuc"><br>
+   <button  type="button"  onclick="myFunction()">Solve</button>
+ 
+ 
+   
+
+
+ 
+
+</body>
+<script>
+   
+
+    
+
+    function myFunction(){
+
+        var firstNumber=document.getElementById("firstRow").value;
+        var secondNumber=document.getElementById("secondRow").value;
+        if(firstNumber==''){
+            alert("enter first number")
+        }
+        if(secondNumber==''){
+            alert("enter SECOND number")
+        }
+        
+       if(document.getElementById('toplam').checked){
+         document.getElementById('sonuc').value=parseInt(firstNumber)+parseInt(secondNumber);
+       }
+       else if(document.getElementById('cikarma').checked){
+        document.getElementById('sonuc').value=parseInt(firstNumber)-parseInt(secondNumber);
+        }
+        else if(document.getElementById('bolme').checked){
+            if(secondNumber==0){
+                alert("cant be devided by 0")
+            }
+            else{
+                document.getElementById('sonuc').value=parseInt(firstNumber)/parseInt(secondNumber);   
+            }
+         
+        }
+        else if(document.getElementById('carpim').checked){
+            document.getElementById('sonuc').value=parseInt(firstNumber)*parseInt(secondNumber);
+        }
+    }
+    
+
+
+</script>
+</html>
